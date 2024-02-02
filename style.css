@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Work+Sans:wght@400;600;700&family=Young+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+  
+}
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+.container h1{
+    color: #fff;
+    height: 2em;
+    width: 19em;
+    text-align: center;
+    line-height: 2em;
+    /* background-color: red; */
+}
+.QuoteWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 20px;
+    background-color: #4cd137;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.quoteItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.quoteItem .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.refresh{
+    padding: 10px 20px;
+    border: none;
+    color: black;
+    background-color: yellow;
+    margin-top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.loading{
+    display: none;
+    padding: 15px 20px;
+    font-weight: bold;
+    color: #fff;
+   margin: 1rem auto;
+
+    /* background-color: red; */
+    transition: 1s;
+}
+.loading.show{
+    display: block;
+    transition: 1s;
+}
+.quoteItem.hide{
+    display: none;
+
+}
